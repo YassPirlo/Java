@@ -52,14 +52,14 @@ public class Voiture {
             System.out.println("Voyage interrompu");
             result = true;
         } else {
-            essence -= nbConsommer;
+            essence = essence - nbConsommer;
             km += kilometresparcourus;
         }
         return result;
     }
 
     public String toString() {
-        return ("km vehicule " + km + "essence atm " + essence);
+        return ("le véhicule a parcouru " + km + "km" + " et contient " + essence + " l");
     }
 
 }
